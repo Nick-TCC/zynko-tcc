@@ -23,9 +23,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seu-usuario/zynko-tcc.git"
+    "url": "https://github.com/Nick-TCC/zynko-tcc.git"
   },
-  "homepage": "https://seu-usuario.github.io/zynko-tcc",
+  "homepage": "https://nick-tcc.github.io/zynko-tcc",
   "devDependencies": {},
   "dependencies": {}
 } 

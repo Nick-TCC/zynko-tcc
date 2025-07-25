@@ -18,8 +18,8 @@
 
 **Opção A: Via Terminal (Recomendado)**
 ```bash
-# Substitua SEU-USUARIO pelo seu nome de usuário do GitHub
-git remote set-url origin https://github.com/SEU-USUARIO/zynko-tcc.git
+# Comando já configurado para Nick-TCC
+git remote set-url origin https://github.com/Nick-TCC/zynko-tcc.git
 git push -u origin main
 ```
 
@@ -45,12 +45,12 @@ git push -u origin main
 
 Após configurar, seu site ficará disponível em:
 ```
-https://SEU-USUARIO.github.io/zynko-tcc
+https://nick-tcc.github.io/zynko-tcc
 ```
 
-**Exemplo:** Se seu usuário for `joecavalcante`, a URL será:
+**URL específica para Nick-TCC:**
 ```
-https://joecavalcante.github.io/zynko-tcc
+https://nick-tcc.github.io/zynko-tcc
 ```
 
 ## ⚡ **Comandos para fazer upload:**
@@ -60,8 +60,8 @@ https://joecavalcante.github.io/zynko-tcc
 git config --global user.name "Seu Nome"
 git config --global user.email "seu-email@exemplo.com"
 
-# 2. Adicione o repositório remoto (substitua SEU-USUARIO)
-git remote set-url origin https://github.com/SEU-USUARIO/zynko-tcc.git
+# 2. Adicione o repositório remoto (já configurado para Nick-TCC)
+git remote set-url origin https://github.com/Nick-TCC/zynko-tcc.git
 
 # 3. Faça o push
 git push -u origin main
@@ -86,14 +86,14 @@ git push
 - [ ] Repositório criado
 - [ ] Arquivos enviados
 - [ ] GitHub Pages ativado
-- [ ] Site funcionando em `https://SEU-USUARIO.github.io/zynko-tcc`
+- [ ] Site funcionando em `https://nick-tcc.github.io/zynko-tcc`
 
 ## 🆘 **Se algo der errado:**
 
 1. **Verifique se o repositório é público**
 2. **Aguarde alguns minutos** - o deploy pode demorar
 3. **Verifique se o arquivo `index.html` está na raiz**
-4. **Teste a URL:** `https://SEU-USUARIO.github.io/zynko-tcc`
+4. **Teste a URL:** `https://nick-tcc.github.io/zynko-tcc`
 
 ---
 
