@@ -7,23 +7,104 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Hero Section -->
+  <!-- Header/Navigation -->
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">ZYNKO</div>
+          <ul class="nav-menu">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#ferramentas">Ferramentas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section com Carrossel -->
   <section class="hero" id="hero">
-    <div class="container hero-content">
-      <h1>ZYNKO</h1>
-      <p class="slogan">Soluções acessíveis com IA para o seu negócio crescer</p>
-      <a href="#ferramentas" class="btn-primary">Comece agora</a>
+    <div class="carousel">
+      <div class="carousel-slide active">
+        <div class="container hero-content">
+          <h1>ZYNKO</h1>
+          <p class="slogan">Soluções acessíveis com IA para o seu negócio crescer</p>
+          <a href="#ferramentas" class="btn-primary">Comece agora</a>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="container hero-content">
+          <h1>Transforme seu Negócio</h1>
+          <p class="slogan">Use IA para criar conteúdo, atender clientes e crescer no digital</p>
+          <a href="#ferramentas" class="btn-primary">Ver ferramentas</a>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="container hero-content">
+          <h1>Resultados Reais</h1>
+          <p class="slogan">Pequenos negócios que cresceram usando nossas soluções</p>
+          <a href="#depoimentos" class="btn-primary">Ver casos</a>
+        </div>
+      </div>
+      <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+      <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+      <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner de Destaque -->
+  <section class="banner-destaque">
+    <div class="container">
+      <div class="banner-content">
+        <div class="banner-text">
+          <h2>🎯 Plano Basic - Apenas R$ 97/mês</h2>
+          <p>Acesso completo a todas as ferramentas de IA para seu negócio</p>
+        </div>
+        <div class="banner-cta">
+          <a href="#contato" class="btn-primary">Quero começar</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- O que é a ZYNKO? -->
   <section class="sobre" id="sobre">
     <div class="container">
-      <h2>O que é a ZYNKO?</h2>
-      <p>Uma microagência voltada para ajudar pequenos negócios a entrarem no mundo digital de forma acessível, usando inteligência artificial e ferramentas fáceis de aplicar no dia a dia.</p>
+      <div class="sobre-content">
+        <div class="sobre-text">
+          <h2>O que é a ZYNKO?</h2>
+          <p>Uma microagência voltada para ajudar pequenos negócios a entrarem no mundo digital de forma acessível, usando inteligência artificial e ferramentas fáceis de aplicar no dia a dia.</p>
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Clientes atendidos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Ferramentas de IA</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">97%</span>
+              <span class="stat-label">Satisfação</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-image">
+          <div class="image-placeholder">
+            <span>🚀</span>
+            <p>Transformação Digital</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -74,6 +155,48 @@
           <p>Transforme textos em vídeos rapidamente.</p>
           <a href="https://pictory.ai/" target="_blank" class="btn-secondary">Criar vídeo</a>
         </div>
+        <div class="card">
+          <span class="icon">📊</span>
+          <h3>Analisar dados</h3>
+          <p>Entenda seus resultados com IA.</p>
+          <a href="https://analytics.google.com/" target="_blank" class="btn-secondary">Ver analytics</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <h2>O que nossos clientes dizem</h2>
+      <div class="depoimentos-grid">
+        <div class="depoimento">
+          <div class="depoimento-content">
+            <p>"A ZYNKO transformou meu pequeno negócio. Agora consigo criar conteúdo profissional sem gastar fortunas!"</p>
+            <div class="depoimento-autor">
+              <span class="autor-nome">Maria Silva</span>
+              <span class="autor-empresa">Boutique Estilo</span>
+            </div>
+          </div>
+        </div>
+        <div class="depoimento">
+          <div class="depoimento-content">
+            <p>"As ferramentas de IA me ajudaram a aumentar minhas vendas em 300% no primeiro mês!"</p>
+            <div class="depoimento-autor">
+              <span class="autor-nome">João Santos</span>
+              <span class="autor-empresa">Padaria Doce Sabor</span>
+            </div>
+          </div>
+        </div>
+        <div class="depoimento">
+          <div class="depoimento-content">
+            <p>"Finalmente consegui ter uma presença digital profissional sem complicação!"</p>
+            <div class="depoimento-autor">
+              <span class="autor-nome">Ana Costa</span>
+              <span class="autor-empresa">Consultoria Vida</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -81,36 +204,124 @@
   <!-- Passo a passo -->
   <section class="tutorial" id="tutorial">
     <div class="container">
-      <h2>Passo a passo para começar</h2>
-      <ol>
-        <li>Acesse a ferramenta desejada</li>
-        <li>Siga as instruções pré-configuradas</li>
-        <li>Publique ou implemente no seu negócio!</li>
-      </ol>
+      <h2>Como funciona?</h2>
+      <div class="passos">
+        <div class="passo">
+          <div class="passo-numero">1</div>
+          <h3>Escolha sua ferramenta</h3>
+          <p>Selecione a ferramenta de IA que você precisa</p>
+        </div>
+        <div class="passo">
+          <div class="passo-numero">2</div>
+          <h3>Siga o tutorial</h3>
+          <p>Use nossos guias passo a passo</p>
+        </div>
+        <div class="passo">
+          <div class="passo-numero">3</div>
+          <h3>Veja os resultados</h3>
+          <p>Implemente e acompanhe seu crescimento</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner CTA -->
+  <section class="banner-cta">
+    <div class="container">
+      <div class="banner-cta-content">
+        <h2>Pronto para transformar seu negócio?</h2>
+        <p>Junte-se a centenas de pequenos negócios que já cresceram com IA</p>
+        <a href="#contato" class="btn-primary btn-large">Começar agora</a>
+      </div>
     </div>
   </section>
 
   <!-- Contato / Ajuda -->
   <section class="contato" id="contato">
     <div class="container">
-      <h2>Contato / Ajuda</h2>
-      <form class="formulario" action="#" method="POST" onsubmit="return false;">
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua dúvida ou mensagem" required></textarea>
-        <button type="submit" class="btn-primary" onclick="alert('Mensagem enviada! (Demonstração)')">Enviar</button>
-      </form>
-      <div class="contato-links">
-        <a href="https://wa.me/5599999999999" target="_blank" class="btn-secondary">WhatsApp</a>
-        <a href="mailto:suporte@zynko.com" class="btn-secondary">E-mail</a>
+      <h2>Fale conosco</h2>
+      <div class="contato-content">
+        <div class="contato-info">
+          <h3>Vamos conversar?</h3>
+          <p>Entre em contato e descubra como a IA pode transformar seu negócio</p>
+          <div class="contato-item">
+            <span class="contato-icon">📧</span>
+            <span>contato@zynko.com</span>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icon">📱</span>
+            <span>(11) 99999-9999</span>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icon">📍</span>
+            <span>São Paulo, SP</span>
+          </div>
+        </div>
+        <form class="formulario" action="#" method="POST" onsubmit="return false;">
+          <input type="text" placeholder="Seu nome" required>
+          <input type="email" placeholder="Seu e-mail" required>
+          <input type="tel" placeholder="Seu telefone">
+          <textarea placeholder="Conte-nos sobre seu negócio" required></textarea>
+          <button type="submit" class="btn-primary" onclick="alert('Mensagem enviada! Entraremos em contato em breve.')">Enviar mensagem</button>
+        </form>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2024 ZYNKO. Todos os direitos reservados.</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>ZYNKO</h4>
+          <p>Soluções acessíveis com IA para pequenos negócios</p>
+        </div>
+        <div class="footer-section">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#ferramentas">Ferramentas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <p>contato@zynko.com</p>
+          <p>(11) 99999-9999</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ZYNKO. Todos os direitos reservados.</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Carrossel
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(n) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+
+    function changeSlide(direction) {
+      showSlide(currentSlide + direction);
+    }
+
+    function currentSlide(n) {
+      showSlide(n - 1);
+    }
+
+    // Auto-play carrossel
+    setInterval(() => {
+      changeSlide(1);
+    }, 5000);
+  </script>
 </body>
 </html>
