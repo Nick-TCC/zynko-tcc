@@ -12,14 +12,14 @@ from pathlib import Path
 
 # Configurações
 PORT = 8000
-DIRECTORY = Path(__file__).parent / "Zynko"
+DIRECTORY = Path(__file__).parent
 
 class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(DIRECTORY), **kwargs)
 
 def main():
-    # Muda para o diretório Zynko
+    # Muda para o diretório atual
     os.chdir(DIRECTORY)
     
     # Cria o servidor
