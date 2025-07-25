@@ -1,0 +1,31 @@
+{
+  "name": "zynko-tcc",
+  "version": "1.0.0",
+  "description": "Projeto ZYNKO - Soluções acessíveis com IA para TCC",
+  "main": "Zynko/index.html",
+  "scripts": {
+    "start": "python3 server.py",
+    "dev": "python3 server.py",
+    "serve": "python3 server.py",
+    "open": "open Zynko/index.html",
+    "build": "echo 'Projeto estático - não requer build'",
+    "test": "echo 'Abra Zynko/index.html no navegador para testar'"
+  },
+  "keywords": [
+    "tcc",
+    "ia",
+    "pequenos-negocios",
+    "landing-page",
+    "html",
+    "css"
+  ],
+  "author": "Joe Cavalcante",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/zynko-tcc.git"
+  },
+  "homepage": "https://seu-usuario.github.io/zynko-tcc",
+  "devDependencies": {},
+  "dependencies": {}
+} 
