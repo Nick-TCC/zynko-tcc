@@ -251,6 +251,108 @@ h2 {
   font-weight: 500;
 }
 
+/* Planos */
+.planos {
+  background: #f8fafc;
+}
+
+.planos-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.planos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.plano-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.plano-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.plano-pro {
+  border-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.plano-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.plano-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.plano-header h3 {
+  color: #2563eb;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.plano-preco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.preco-valor {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.preco-periodo {
+  font-size: 1rem;
+  color: #666;
+}
+
+.plano-features {
+  margin-bottom: 30px;
+}
+
+.plano-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plano-features li {
+  padding: 8px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.plano-cta {
+  text-align: center;
+}
+
 /* Cards */
 .cards {
   display: grid;
@@ -423,7 +525,8 @@ h2 {
 }
 
 .formulario input,
-.formulario textarea {
+.formulario textarea,
+.formulario select {
   padding: 15px;
   border: 2px solid #e2e8f0;
   border-radius: 10px;
@@ -434,7 +537,8 @@ h2 {
 }
 
 .formulario input:focus,
-.formulario textarea:focus {
+.formulario textarea:focus,
+.formulario select:focus {
   outline: none;
   border-color: #2563eb;
 }
@@ -523,6 +627,14 @@ footer {
     height: 250px;
   }
   
+  .planos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .plano-pro {
+    transform: none;
+  }
+  
   .contato-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -565,5 +677,9 @@ footer {
   
   .foto-placeholder {
     height: 200px;
+  }
+  
+  .plano-card {
+    padding: 30px 20px;
   }
 } 
