@@ -4,6 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZYNKO – Soluções acessíveis com IA</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ZYNKO oferece soluções acessíveis de IA para pequenos negócios crescerem no digital. Ferramentas inteligentes, planos acessíveis e resultados reais.">
+  <meta name="keywords" content="IA, inteligência artificial, pequenos negócios, marketing digital, automação, ferramentas de IA">
+  <meta name="author" content="ZYNKO">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zynko.com/">
+  <meta property="og:title" content="ZYNKO – Soluções acessíveis com IA">
+  <meta property="og:description" content="Transforme seu negócio com IA acessível. Ferramentas inteligentes para pequenos negócios crescerem no digital.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://zynko.com/">
+  <meta property="twitter:title" content="ZYNKO – Soluções acessíveis com IA">
+  <meta property="twitter:description" content="Transforme seu negócio com IA acessível. Ferramentas inteligentes para pequenos negócios crescerem no digital.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://zynko.com/">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ZYNKO",
+    "description": "Soluções acessíveis com IA para pequenos negócios",
+    "url": "https://zynko.com",
+    "logo": "https://zynko.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-11-99999-9999",
+      "contactType": "customer service",
+      "email": "contato@zynko.com"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/zynko",
+      "https://www.instagram.com/zynko"
+    ]
+  }
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +80,20 @@
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#planos">Planos</a></li>
             <li><a href="#ferramentas">Ferramentas</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
+          <div class="nav-actions">
+            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Alternar modo escuro">
+              <span class="sun">☀️</span>
+              <span class="moon">🌙</span>
+            </button>
+            <div class="mobile-menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -47,11 +118,7 @@
           <a href="#planos" class="btn-primary">Ver planos</a>
         </div>
         <div class="banner-foto-img">
-          <!-- ADICIONE SUA FOTO AQUI -->
-          <div class="foto-placeholder">
-            <span>📸</span>
-            <p>Adicione sua foto aqui</p>
-          </div>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Equipe de negócios colaborando" class="banner-image" loading="lazy">
         </div>
       </div>
     </div>
@@ -169,11 +236,7 @@
     <div class="container">
       <div class="banner-foto-content">
         <div class="banner-foto-img">
-          <!-- ADICIONE SUA FOTO AQUI -->
-          <div class="foto-placeholder">
-            <span>📸</span>
-            <p>Adicione sua foto aqui</p>
-          </div>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Equipe de negócios colaborando" class="banner-image" loading="lazy">
         </div>
         <div class="banner-foto-text">
           <h2>Resultados Reais</h2>
@@ -251,11 +314,7 @@
           <a href="#contato" class="btn-primary">Quero começar grátis</a>
         </div>
         <div class="banner-foto-img">
-          <!-- ADICIONE SUA FOTO AQUI -->
-          <div class="foto-placeholder">
-            <span>📸</span>
-            <p>Adicione sua foto aqui</p>
-          </div>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Equipe de negócios colaborando" class="banner-image" loading="lazy">
         </div>
       </div>
     </div>
@@ -321,6 +380,56 @@
     </div>
   </section>
 
+  <!-- Blog/Conteúdo -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <h2>Últimas do Blog</h2>
+      <p class="blog-subtitle">Dicas e insights sobre IA para pequenos negócios</p>
+      
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop" alt="IA para marketing" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <span class="blog-category">Marketing Digital</span>
+            <h3>Como usar IA para criar conteúdo que converte</h3>
+            <p>Descubra as melhores práticas para usar inteligência artificial na criação de conteúdo que realmente gera resultados para seu negócio.</p>
+            <a href="#" class="blog-link">Ler mais →</a>
+          </div>
+        </article>
+        
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop" alt="Automação de negócios" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <span class="blog-category">Automação</span>
+            <h3>5 ferramentas de IA que todo pequeno negócio precisa</h3>
+            <p>Conheça as ferramentas essenciais que podem transformar a forma como você gerencia seu negócio.</p>
+            <a href="#" class="blog-link">Ler mais →</a>
+          </div>
+        </article>
+        
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop" alt="Crescimento de negócios" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <span class="blog-category">Crescimento</span>
+            <h3>Case de sucesso: Como a IA aumentou vendas em 300%</h3>
+            <p>História real de como um pequeno negócio transformou seus resultados usando nossas soluções.</p>
+            <a href="#" class="blog-link">Ler mais →</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="blog-cta">
+        <a href="#" class="btn-primary">Ver todos os artigos</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Contato -->
   <section class="contato" id="contato">
     <div class="container">
@@ -342,18 +451,18 @@
             <span>São Paulo, SP</span>
           </div>
         </div>
-        <form class="formulario" action="#" method="POST" onsubmit="return false;">
-          <input type="text" placeholder="Seu nome" required>
-          <input type="email" placeholder="Seu e-mail" required>
-          <input type="tel" placeholder="Seu telefone">
+        <form class="formulario" id="contatoForm" onsubmit="enviarFormulario(event)">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <input type="tel" name="telefone" placeholder="Seu telefone">
           <select name="plano" required>
             <option value="">Escolha seu plano</option>
             <option value="basic">ZYNKO Basic (Grátis)</option>
             <option value="pro">ZYNKO Pro (R$ 30/mês)</option>
             <option value="max">ZYNKO Max (R$ 60/mês)</option>
           </select>
-          <textarea placeholder="Conte-nos sobre seu negócio" required></textarea>
-          <button type="submit" class="btn-primary" onclick="alert('Mensagem enviada! Entraremos em contato em breve.')">Enviar mensagem</button>
+          <textarea name="mensagem" placeholder="Conte-nos sobre seu negócio" required></textarea>
+          <button type="submit" class="btn-primary" id="submitBtn">Enviar mensagem</button>
         </form>
       </div>
     </div>
@@ -379,6 +488,20 @@
           <h4>Contato</h4>
           <p>contato@zynko.com</p>
           <p>(11) 99999-9999</p>
+          <div class="social-links">
+            <a href="https://linkedin.com/company/zynko" target="_blank" aria-label="LinkedIn">
+              <span>📱</span>
+            </a>
+            <a href="https://instagram.com/zynko" target="_blank" aria-label="Instagram">
+              <span>📸</span>
+            </a>
+            <a href="https://youtube.com/@zynko" target="_blank" aria-label="YouTube">
+              <span>📺</span>
+            </a>
+            <a href="https://twitter.com/zynko" target="_blank" aria-label="Twitter">
+              <span>🐦</span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
@@ -386,5 +509,177 @@
       </div>
     </div>
   </footer>
+  
+  <script>
+    // Menu Mobile
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    
+    // Fechar menu ao clicar em um link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+    
+    // Navegação suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // Contador animado para estatísticas
+    function animateCounter(element, target, duration = 2000) {
+      let start = 0;
+      const increment = target / (duration / 16);
+      
+      const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+          element.textContent = target;
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(start);
+        }
+      }, 16);
+    }
+    
+    // Observador de interseção para animar contadores
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counters = entry.target.querySelectorAll('.stat-number');
+          counters.forEach(counter => {
+            const target = parseInt(counter.textContent.replace(/\D/g, ''));
+            const suffix = counter.textContent.replace(/\d/g, '');
+            animateCounter(counter, target);
+            counter.textContent = target + suffix;
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    // Observar seção de estatísticas
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) {
+      observer.observe(statsSection);
+    }
+    
+    // Efeito de parallax suave no hero
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const hero = document.querySelector('.hero');
+      if (hero) {
+        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+      }
+    });
+    
+    // Adicionar classe ativa ao menu baseado na seção visível
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Dark Mode Toggle
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const html = document.documentElement;
+    
+    // Verificar preferência salva
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      html.setAttribute('data-theme', savedTheme);
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      html.setAttribute('data-theme', 'dark');
+    }
+    
+    darkModeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Função para enviar o formulário
+    function enviarFormulario(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('contatoForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const formData = new FormData(form);
+      
+      // Desabilitar botão durante envio
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+      
+      // Converter FormData para URLSearchParams para compatibilidade
+      const params = new URLSearchParams();
+      for (let [key, value] of formData.entries()) {
+        params.append(key, value);
+      }
+      
+      fetch('/contato', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: params
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          alert(data.message);
+          form.reset();
+        } else {
+          alert('Erro: ' + data.message);
+        }
+      })
+      .catch(error => {
+        console.error('Erro:', error);
+        alert('Erro ao enviar mensagem. Verifique sua conexão.');
+      })
+      .finally(() => {
+        // Reabilitar botão
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar mensagem';
+      });
+    }
+  </script>
 </body>
 </html>
